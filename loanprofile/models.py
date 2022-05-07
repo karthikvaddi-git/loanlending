@@ -10,6 +10,7 @@ from loanprofile.storage_backends import PublicMediaStorage, PrivateMediaStorage
 
 
 class profilemodel(models.Model):
+
     uploaded_at = models.DateTimeField(auto_now_add=True)
     profilepic = models.ImageField(storage=PublicMediaStorage())
     pancard = models.FileField(storage=PublicMediaStorage())
