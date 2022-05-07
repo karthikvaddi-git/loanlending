@@ -123,7 +123,6 @@ AUTH_PASSWORD_VALIDATORS = [
 
 
 SITE_ID = 1
-LOGIN_REDIRECT_URL = '/'
 
 # Additional configuration settings
 # SOCIALACCOUNT_QUERY_EMAIL = True
@@ -168,9 +167,9 @@ SOCIALACCOUNT_PROVIDERS = {
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
 AUTH_USER_MODEL = "accounts.CustomUser"
-LOGIN_URL = 'accounts/login'
-LOGIN_REDIRECT_URL = 'home/'
-LOGOUT_REDIRECT_URL = 'home/'
+LOGIN_URL = '/login'
+LOGIN_REDIRECT_URL = '/'
+LOGOUT_REDIRECT_URL = '/'
 
 #SMTP SETTINGS
 EMAIL_BACKEND = "django.core.mail.backends.smtp.EmailBackend"
@@ -205,5 +204,3 @@ STATIC_URL = '/static/'
 # Default primary key field type
 # https://docs.djangoproject.com/en/3.2/ref/settings/#default-auto-field
 
-LOGIN_REDIRECT_URL = 'home'
-LOGOUT_REDIRECT_URL = '/'
